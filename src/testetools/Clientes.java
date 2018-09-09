@@ -6,7 +6,8 @@ package testetools;
  */
 public class Clientes {
 
-    //CNPJ;nome;ramo de atividade
+   
+    private String numero;
     private String CNPJ;
     private String nome;
     private String ramo;
@@ -38,10 +39,21 @@ public class Clientes {
         this.ramo = ramo;
     }
 
-    public Clientes(String CNPJ, String nome, String ramo) {
+    public String getNumero() {
+        return numero;
+    }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }
+
+    public Clientes(String numero, String CNPJ, String nome, String ramo) {
+        this.numero = numero;
         this.CNPJ = CNPJ;
         this.nome = nome;
         this.ramo = ramo;
     }
+
+  
 
 }

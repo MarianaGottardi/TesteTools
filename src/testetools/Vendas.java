@@ -6,38 +6,47 @@ package testetools;
  */
 public class Vendas {
 
-    //;ID da venda;ID do item;qtde do item;preço do item;Nome do Vendedor
-    private Integer idvenda;
-    private Long idItem;
-    private Integer qtdItem;
-    private Double precoItem;
-    private String nomeVendedor;
+     private String numero;
+	private String idVenda;
+	private String idItem;
+	private String qntItem;
+	private Double precoItem;
+	private String nomeVendedor;
+
 
     public Vendas() {
     }
 
-    public Integer getIdvenda() {
-        return idvenda;
+    public String getNumero() {
+        return numero;
     }
 
-    public void setIdvenda(Integer idvenda) {
-        this.idvenda = idvenda;
+    public void setNumero(String numero) {
+        this.numero = numero;
     }
 
-    public Long getIdItem() {
+    public String getIdVenda() {
+        return idVenda;
+    }
+
+    public void setIdVenda(String idVenda) {
+        this.idVenda = idVenda;
+    }
+
+    public String getIdItem() {
         return idItem;
     }
 
-    public void setIdItem(Long idItem) {
+    public void setIdItem(String idItem) {
         this.idItem = idItem;
     }
 
-    public Integer getQtdItem() {
-        return qtdItem;
+    public String getQntItem() {
+        return qntItem;
     }
 
-    public void setQtdItem(Integer qtdItem) {
-        this.qtdItem = qtdItem;
+    public void setQntItem(String qntItem) {
+        this.qntItem = qntItem;
     }
 
     public Double getPrecoItem() {
@@ -56,12 +65,15 @@ public class Vendas {
         this.nomeVendedor = nomeVendedor;
     }
 
-    public Vendas(Integer idvenda, Long idItem, Integer qtdItem, Double precoItem, String nomeVendedor) {
-        this.idvenda = idvenda;
+    public Vendas(String numero, String idVenda, String idItem, String qntItem, Double precoItem, String nomeVendedor) {
+        this.numero = numero;
+        this.idVenda = idVenda;
         this.idItem = idItem;
-        this.qtdItem = qtdItem;
+        this.qntItem = qntItem;
         this.precoItem = precoItem;
         this.nomeVendedor = nomeVendedor;
     }
+
+    
 
 }
